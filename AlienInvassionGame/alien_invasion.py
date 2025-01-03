@@ -11,7 +11,7 @@ class AlienInvasion:
         pygame.init()
 
         self.settings = Settings()
-        self.screen = pygame.display.set_mode(self.settings.screen_width, self.settings.screen_height)
+        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("ALIEN INVASION")
 
         
@@ -23,7 +23,7 @@ class AlienInvasion:
                 if event.type == pygame.QUIT:
                     sys.exit()
 
-            self.screen.fill(self.settings.bg_bgcolor)
+            self.screen.fill((self.settings.bg_bgcolor))
 
             pygame.display.flip()
 
