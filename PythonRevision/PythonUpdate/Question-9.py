@@ -1,0 +1,1 @@
+# To print the lines of a sample text file in capital letters
